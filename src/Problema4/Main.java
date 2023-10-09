@@ -1,9 +1,6 @@
 package Problema4;
 
-import Problema3.Persoana;
-
 import java.text.ParseException;
-import java.util.Arrays;
 import java.util.Scanner;
 
 import static java.lang.Integer.parseInt;

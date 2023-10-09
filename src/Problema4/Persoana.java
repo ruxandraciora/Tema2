@@ -1,4 +1,4 @@
-package Problema3;
+package Problema4;
 
 import javax.swing.*;
 import java.text.ParseException;
@@ -34,11 +34,10 @@ public class Persoana {
         else
             data = "20" + data;
         String data_format = data.substring(0,4) + "-" + data.substring(4,6) + "-" + data.substring(6,8);
-        System.out.println(data_format);
         LocalDate data_actuala = LocalDate.now();
         //SimpleDateFormat newFormat = new SimpleDateFormat("yyyy-mm-dd");
         //String data_formatata = newFormat.format(data);
-        LocalDate data_nasterii = LocalDate.parse(data);
+        LocalDate data_nasterii = LocalDate.parse(data_format);
         int varsta = Period.between(data_nasterii,data_actuala).getYears();
         return varsta;
     }
